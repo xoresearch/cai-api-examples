@@ -4,7 +4,7 @@ curl \
 	--verbose \
 	--request POST \
 	--header "Content-Type: application/json; charset=utf-8" \
-	--data-binary "@./eval_classify_easi.json" \
+	--data-binary "@./eval_classify_std_5min.json" \
 	--output "./eval_classify_response.json" \
 	"https://api.cardio.ai/v1/evaluation/classify"
 
