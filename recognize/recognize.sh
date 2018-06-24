@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 curl \
 	--verbose \
@@ -6,5 +6,5 @@ curl \
 	--request POST \
 	--header "X-Api-Key: your-api-key" \
 	--header "Content-Type: application/json; charset=utf-8" \
-	--data-binary "@./demorec_easi_5min.json" \
-	"https://api.cardio.ai/v1/evaluation/classify"
+	--data-binary "@$(dirname "${0}")/../records/demorec_easi_5min.json" \
+	"https://stage.web.cardio.ai/v1/recognize"
