@@ -8,7 +8,7 @@ FILE_PATH=$(dirname "${0}")/../records/${FILE_NAME}
 
 # Make sure the input file exists
 if [ ! -f ${FILE_PATH} ]; then
-	echo "File at \"${FILE_PATH}\" doesn't exists, interrupted."
+	echo "File at \"${FILE_PATH}\" doesn't exist, interrupted."
 	exit 1
 fi
 
