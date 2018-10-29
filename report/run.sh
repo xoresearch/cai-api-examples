@@ -2,7 +2,7 @@
 
 FILE_NAME="12_channels_82sec.scp"
 #FILE_NAME="8_channels_10sec.scp"
-#FILE_NAME="easi_5min.json"
+#FILE_NAME="3_channels_5min.json"
 
 FILE_PATH=$(dirname "${0}")/../records/${FILE_NAME}
 
@@ -39,4 +39,4 @@ curl \
 	--header "Content-Type: ${CONTENT_TYPE}" \
 	--data-binary "@${FILE_PATH}" \
 	--output "./report_response.pdf" \
-	"https://stage.web.cardio.ai/rest/v1/report"
+	"https://api.cardio.ai/v1/report"
