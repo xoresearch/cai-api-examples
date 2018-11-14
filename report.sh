@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-FILE_NAME="12_channels_82sec.scp"
+FILE_NAME="3_channels_5min.json"
 #FILE_NAME="8_channels_10sec.scp"
-#FILE_NAME="3_channels_5min.json"
+#FILE_NAME="12_channels_82sec.scp"
 
 FILE_PATH=$(dirname "${0}")/records/${FILE_NAME}
 
 # Make sure the input file exists
-if [ ! -f ${FILE_PATH} ]; then
+if [[ ! -f ${FILE_PATH} ]]; then
 	echo "File at \"${FILE_PATH}\" doesn't exist, interrupted."
 	exit 1
 fi
