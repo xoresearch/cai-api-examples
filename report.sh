@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-FILE_NAME="3_channels_5min.json"
+#FILE_NAME="3_channels_5min.json"
 #FILE_NAME="8_channels_10sec.scp"
-#FILE_NAME="12_channels_82sec.scp"
+FILE_NAME="12_channels_82sec.scp"
 
 FILE_PATH=$(dirname "${0}")/records/${FILE_NAME}
 

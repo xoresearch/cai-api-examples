@@ -36,6 +36,7 @@ curl \
 	--verbose \
 	--max-time 120 \
 	--request POST \
+	--header "X-Api-Key: <your api key>" \
 	--header "Content-Type: ${CONTENT_TYPE}" \
 	--data-binary "@${FILE_PATH}" \
-	"https://api.cardio.ai/v1/classify"
+	"https://api.cardio.ai/v1/process"
