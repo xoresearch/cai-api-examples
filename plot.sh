@@ -39,4 +39,4 @@ curl \
 	--header "Content-Type: ${CONTENT_TYPE}" \
 	--data-binary "@${FILE_PATH}" \
 	--output "./plot_response.png" \
-	"https://api.cardio.ai/v1/plot"
+	"https://api.cardio.ai/eval/plot"

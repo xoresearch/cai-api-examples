@@ -38,4 +38,4 @@ curl \
 	--request POST \
 	--header "Content-Type: ${CONTENT_TYPE}" \
 	--data-binary "@${FILE_PATH}" \
-	"https://api.cardio.ai/v1/classify"
+	"https://api.cardio.ai/eval/classify"
