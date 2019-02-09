@@ -39,4 +39,4 @@ curl \
 	--header "X-Api-Key: <your api key>" \
 	--header "Content-Type: ${CONTENT_TYPE}" \
 	--data-binary "@${FILE_PATH}" \
-	"https://api.cardio.ai/v1/process"
+	"https://api.cardio.ai/v1/process?language=uk"
